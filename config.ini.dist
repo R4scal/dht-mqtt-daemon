@@ -1,0 +1,62 @@
+# DHT Raspberry MQTT Client/Daemon
+# Source: https://github.com/R4scal/dht-mqtt-daemon
+#
+# Uncomment and adapt all settings as needed.
+
+[General]
+
+# The operation mode of the program. Determines wether retrieved sensor data is published via MQTT or stdout/file.
+# Currently supported:
+#
+#  homeassistant-mqtt - Publish to an MQTT broker following the HomeAssistant discovery format
+#                       (https://www.home-assistant.io/docs/mqtt/discovery/)
+#
+
+reporting_method = homeassistant-mqtt
+
+[Daemon]
+
+# Enable or Disable an endless execution loop (Default: true)
+#enabled = true
+
+# The period between two measurements in seconds (Default: 300)
+#period = 300
+
+[MQTT]
+
+# The hostname or IP address of the MQTT broker to connect to (Default: localhost)
+#hostname = localhost
+
+# The TCP port the MQTT broker is listening on (Default: 1883)
+#port = 1883
+
+# Maximum period in seconds between ping messages to the broker. (Default: 60)
+#keepalive = 60
+
+# The MQTT base topic to publish all Mi Flora sensor data topics under.
+# Default depends on the configured reporting_method
+#base_topic = homeassistant             # Default for: homeassistant-mqtt
+
+# Homie specific: The device ID for this daemon instance (Default: miflora-mqtt-daemon)
+#homie_device_id = miflora-mqtt-daemon
+
+# The MQTT broker authentification credentials (Default: no authentication)
+#username = user
+#password = pwd123
+
+# Enable TLS/SSL on the connection
+#tls = false
+
+# Path to CA Certificate file to verify host
+#tls_ca_cert =
+
+# Path to TLS client auth key file
+#tls_keyfile =
+
+# Path to TLS client auth certificate file
+#tls_certfile =
+
+[Sensor]
+
+# Example using a Raspberry Pi with DHT sensor connected to GPIO4.
+#pin = 4
