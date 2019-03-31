@@ -37,9 +37,6 @@ reporting_method = homeassistant-mqtt
 # Default depends on the configured reporting_method
 #base_topic = homeassistant             # Default for: homeassistant-mqtt
 
-# Homie specific: The device ID for this daemon instance (Default: miflora-mqtt-daemon)
-#homie_device_id = miflora-mqtt-daemon
-
 # The MQTT broker authentification credentials (Default: no authentication)
 #username = user
 #password = pwd123

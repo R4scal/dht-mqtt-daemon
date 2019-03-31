@@ -28,7 +28,7 @@ The DHT sensor offers the following readings:
 | Name            | Description |
 |-----------------|-------------|
 | `temperature`   | Air temperature, in [°C] (0.1°C resolution) |
-| `humidity`       | humidity level, in [%]  (0.1°% resolution) |
+| `humidity`       | humidity level, in [%]  (0.1% resolution) |
 
 ## Prerequisites
 
